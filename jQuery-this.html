@@ -38,7 +38,7 @@
 				splice: [].splice,
 			}
 			jQuery.fn.init.prototype = jQuery.fn;	
-			jQuery.extend = jQuery.fn.extend = function(){ 	//拷贝							
+			jQuery.extend = jQuery.fn.extend = function(){ 	//拷贝	相当于传对象当参数：{hasClass:1,addClass:2}						
 				console.log( this === jQuery || this === jQuery.prototype);
 				//console.log(this===jQuery);			//true,jQuery.extend this指向 jQuery
 				//console.log(this===jQuery.prototype);	//true,jQuery.fn.extend this指向 jQuery.prototype
